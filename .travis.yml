@@ -14,7 +14,7 @@ after_success:
   - git config --global user.name "${U_NAME}"
   - git config --global user.email "${U_EMAIL}"
   - git add .
-  - git commit -m "Automatically update from travis-ci"
+  - git commit -m "Automatically"
   - git push --quiet --force  "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
 
 branches:
